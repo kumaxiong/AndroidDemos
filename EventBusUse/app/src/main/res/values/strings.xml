@@ -1,0 +1,3 @@
+<resources>
+    <string name="app_name">EventBusUse</string><string name="send_event_message">Send Event Message</string><string name="go_to_second_activity">Go to Second Activity</string>
+</resources>
