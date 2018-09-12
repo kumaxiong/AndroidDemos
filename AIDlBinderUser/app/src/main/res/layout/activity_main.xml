@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+
+
+  <Button
+    android:id="@+id/btn_bind"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="36dp"
+    android:layout_marginTop="44dp"
+    android:text="Bind"
+    app:layout_constraintBottom_toTopOf="@+id/btn_unbind"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+  <Button
+    android:id="@+id/btn_unbind"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="54dp"
+    android:text="unbind"
+    app:layout_constraintBottom_toTopOf="@+id/btn_add"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_bind"
+    />
+  <Button
+    android:id="@+id/btn_add"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_marginBottom="39dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginStart="4dp"
+    android:text="add 1 + 1"
+    app:layout_constraintBottom_toTopOf="@+id/btn_min"
+    app:layout_constraintStart_toStartOf="@+id/btn_min"
+    app:layout_constraintTop_toBottomOf="@+id/btn_unbind"
+    />
+  <Button
+    android:id="@+id/btn_min"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="142dp"
+    android:text="minus 1- 1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_add"
+    />
+</android.support.constraint.ConstraintLayout>

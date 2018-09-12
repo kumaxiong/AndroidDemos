@@ -1,0 +1,35 @@
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:descendantFocusability="blocksDescendants">
+
+  <ImageView
+    android:id="@+id/preview"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:scaleType="centerInside"
+    android:src="@mipmap/ic_launcher"
+    app:layout_constraintDimensionRatio="1:1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+  <View
+    android:id="@+id/preview_border"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:background="@drawable/shape_rectangle"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="visible"
+    app:layout_constraintBottom_toBottomOf="@id/preview"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+</android.support.constraint.ConstraintLayout>
