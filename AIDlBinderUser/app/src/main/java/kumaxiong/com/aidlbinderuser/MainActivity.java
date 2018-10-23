@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    this.startActivity();
     setContentView(R.layout.activity_main);
     mBtnBind = findViewById(R.id.btn_bind);
     mBtnUnbind = findViewById(R.id.btn_unbind);
